@@ -70,7 +70,7 @@
 }
 
 .hero__video {
-  min-width: 100%;
+  width: 100%;
 
   @include for-size(desktop) {
     min-width: 793px;

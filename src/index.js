@@ -1,4 +1,5 @@
 import './styles.scss';
 import './js/mobile-menu';
 import './js/form-validation';
-import './js/video-play';
+import './js/video-play-mob';
+import './js/video-play-desk';
