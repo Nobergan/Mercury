@@ -17,6 +17,7 @@ function validate(e) {
     iziToast.error({
       timeout: '2000',
       message: 'Write your name!',
+      position: 'topRight',
     });
   } else {
     nameInputRef.classList.remove('invalid');
@@ -29,6 +30,7 @@ function validate(e) {
     iziToast.error({
       timeout: '2000',
       message: 'Write your surname!',
+      position: 'topRight',
     });
   } else {
     surnameInputRef.classList.remove('invalid');
@@ -42,12 +44,14 @@ function validate(e) {
     iziToast.error({
       timeout: '2000',
       message: 'Write your E-mail!',
+      position: 'topRight',
     });
   } else if (!emailRegex.test(emailInputRef.value)) {
     emailInputRef.classList.add('invalid');
     iziToast.error({
       timeout: '2000',
       message: 'Wrong E-mail!',
+      position: 'topRight',
     });
   } else {
     emailInputRef.classList.remove('invalid');
@@ -62,12 +66,14 @@ function validate(e) {
     iziToast.error({
       timeout: '2000',
       message: 'Write your phone number!',
+      position: 'topRight',
     });
   } else if (!phoneRegex.test(telInputRef.value)) {
     telInputRef.classList.add('invalid');
     iziToast.error({
       timeout: '2000',
       message: 'Wrong phone number!',
+      position: 'topRight',
     });
   } else {
     telInputRef.classList.remove('invalid');
