@@ -29,7 +29,7 @@
 }
 
 .reviews__flex {
-  @include for-size(desktop) {
+  @include for-size(tablet) {
     display: flex;
   }
 }
@@ -51,17 +51,21 @@
   text-align: center;
   align-items: center;
 
-  @include for-size(desktop) {
+  @include for-size(tablet) {
     padding: 0;
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
   }
 }
 
 .reviews__item:not(:last-child) {
   margin-bottom: 98px;
 
-  @include for-size(desktop) {
+  @include for-size(tablet) {
     margin-bottom: 0;
-    margin-right: 11px;
   }
 }
 

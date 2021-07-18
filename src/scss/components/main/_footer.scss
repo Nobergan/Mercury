@@ -15,7 +15,7 @@
 
   color: $footer-primary-text-color;
 
-  @include for-size(desktop) {
+  @include for-size(tablet) {
     font-size: 14px;
   }
 }

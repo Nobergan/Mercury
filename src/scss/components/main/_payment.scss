@@ -10,7 +10,7 @@
 .payment__img {
   width: 100%;
 
-  @include for-size(desktop) {
+  @include for-size(tablet) {
     display: none;
   }
 }
@@ -18,7 +18,8 @@
 .payment__img-desktop {
   display: none;
 
-  @include for-size(desktop) {
+  @include for-size(tablet) {
+    width: 100%;
     display: block;
   }
 }

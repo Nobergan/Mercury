@@ -1,7 +1,7 @@
 .menu-container {
   display: none;
 
-  @include for-size(desktop) {
+  @include for-size(tablet) {
     display: flex;
   }
 }
@@ -12,7 +12,7 @@
 
   height: 82px;
 
-  @include for-size(desktop) {
+  @include for-size(tablet) {
     margin-left: 0px;
   }
 }
@@ -24,7 +24,7 @@
     margin-right: 50px;
   }
 
-  @include for-size(desktop) {
+  @include for-size(tablet) {
     &:not(:last-child) {
       margin-right: 80px;
     }
@@ -50,7 +50,7 @@
     text-decoration: none;
   }
 
-  @include for-size(desktop) {
+  @include for-size(tablet) {
     @include font(24px, 1.2, 500);
   }
 }

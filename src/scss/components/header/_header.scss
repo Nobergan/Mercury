@@ -30,13 +30,17 @@ header .container {
 }
 
 .header__logo {
-  @include for-size(desktop) {
+  @include for-size(tablet) {
     display: none;
   }
 
   &-desktop {
     @include for-size(tablet-only) {
       display: none;
+    }
+
+    @include for-size(tablet) {
+      display: block;
     }
   }
 }

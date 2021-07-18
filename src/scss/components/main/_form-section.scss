@@ -8,17 +8,21 @@
   background-repeat: no-repeat;
   background-size: contain;
 
-  @include for-size(desktop) {
-    padding: 120px 0;
+  @include for-size(tablet) {
+    padding: 80px 0;
 
     background-image: url('./images/form-bg-img-desktop.jpg');
     background-size: cover;
     background-position: bottom;
   }
+
+  @include for-size(desktop) {
+    padding: 120px 0;
+  }
 }
 
 .form-section .container {
-  @include for-size(desktop) {
+  @include for-size(tablet) {
     display: flex;
     justify-content: center;
     align-items: center;
