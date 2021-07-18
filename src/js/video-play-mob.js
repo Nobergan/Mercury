@@ -27,7 +27,6 @@ playBtnRef.addEventListener('click', handlePlayButtonMob, false);
 async function playVideoMob() {
   try {
     await videoRef.play();
-    playBtnRef.classList.add('playing');
     playBtnRef.classList.add('is-hidden');
     videoRef.controls = 'controls';
   } catch (err) {
@@ -40,6 +39,5 @@ function handlePlayButtonMob() {
     playVideoMob();
   } else {
     videoRef.pause();
-    playBtnRef.classList.remove('playing');
   }
 }
