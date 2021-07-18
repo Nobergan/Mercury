@@ -1,0 +1,18 @@
+@import './scss/global/normalize';
+@import './scss/utils/variables';
+@import './scss/utils/mixins';
+@import './scss/global/common';
+
+// Header
+@import './scss/components/header/header';
+@import './scss/components/header/menu-button-mobile';
+@import './scss/components/header/mobile-menu';
+@import './scss/components/header/site-nav';
+
+// Main
+@import './scss/components/main/hero';
+@import './scss/components/main/payment';
+@import './scss/components/main/form-section';
+@import './scss/components/main/form';
+@import './scss/components/main/reviews';
+@import './scss/components/main/footer';

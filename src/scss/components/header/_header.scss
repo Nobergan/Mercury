@@ -1,0 +1,42 @@
+header {
+  position: relative;
+  min-width: 100%;
+
+  padding: 28px 0px;
+  background-color: $header-bg;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & {
+    @include for-size(desktop) {
+      padding: 36px 0px;
+      max-height: 140px;
+    }
+  }
+}
+
+header .container {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.header .mobile-menu__site-nav {
+  @include for-size(tablet) {
+    display: none;
+  }
+}
+
+.header__logo {
+  @include for-size(desktop) {
+    display: none;
+  }
+
+  &-desktop {
+    @include for-size(tablet-only) {
+      display: none;
+    }
+  }
+}

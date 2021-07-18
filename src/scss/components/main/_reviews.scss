@@ -1,0 +1,135 @@
+.reviews {
+  padding: 71px 0 80px;
+  background-color: $reviews-bg;
+
+  @include for-size(desktop) {
+    padding: 120px 0;
+  }
+}
+
+.reviews__title {
+  margin-bottom: 95px;
+
+  @include font(24px, 1.6, bold);
+
+  text-align: center;
+
+  color: $primary-text-color;
+
+  &--part {
+    color: $part-of-text;
+  }
+
+  @include for-size(desktop) {
+    margin-bottom: 181px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 756px;
+  }
+}
+
+.reviews__flex {
+  @include for-size(desktop) {
+    display: flex;
+  }
+}
+
+// Карточка отзыва
+.reviews__item-body {
+  padding: 80px 24px 36px;
+  background-color: $reviews-item-bg-color;
+
+  @include for-size(desktop) {
+    padding: 120px 32px 60px;
+  }
+}
+
+.reviews__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  @include for-size(desktop) {
+    padding: 0;
+  }
+}
+
+.reviews__item:not(:last-child) {
+  margin-bottom: 98px;
+
+  @include for-size(desktop) {
+    margin-bottom: 0;
+    margin-right: 11px;
+  }
+}
+
+.reviews__item-img {
+  position: absolute;
+  top: -60px;
+
+  @include for-size(desktop) {
+    display: none;
+  }
+}
+
+.reviews__item-img-desktop {
+  position: absolute;
+  display: none;
+
+  @include for-size(desktop) {
+    display: block;
+    top: -105px;
+  }
+}
+
+.reviews__item-name {
+  margin-bottom: 8px;
+
+  @include font(18px, 1.2, bold);
+
+  color: $reviews-primary-text-color;
+
+  @include for-size(desktop) {
+    @include font(24px, 1.2, bold);
+  }
+}
+
+.reviews__item-city {
+  margin-bottom: 20px;
+
+  @include font(16px, 1.2, normal);
+
+  color: $reviews-secondary-text-color;
+
+  @include for-size(desktop) {
+    @include font(18px, 1.2, normal);
+    margin-bottom: 22px;
+  }
+}
+
+.reviews__item-text {
+  margin-bottom: 16px;
+
+  @include font(14px, 1.2, normal);
+
+  color: $reviews-primary-text-color;
+
+  @include for-size(desktop) {
+    @include font(18px, 1.2, normal);
+    margin-bottom: 24px;
+  }
+}
+
+.reviews__item-result {
+  margin-bottom: 0;
+
+  @include font(24px, 1.2, bold);
+
+  color: $reviews-primary-text-color;
+
+  @include for-size(desktop) {
+    @include font(32px, 1.2, bold);
+  }
+}

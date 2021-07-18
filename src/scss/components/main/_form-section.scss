@@ -1,0 +1,59 @@
+.form-section {
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%),
+    #031022;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 40px 0 29px;
+
+  background-image: url('./images/form-bg-img-first.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include for-size(desktop) {
+    padding: 120px 0;
+
+    background-image: url('./images/form-bg-img-desktop.jpg');
+    background-size: cover;
+    background-position: bottom;
+  }
+}
+
+.form-section .container {
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.form-section__text {
+  max-width: 383px;
+  margin-right: 10px;
+}
+
+.form-section__title {
+  margin-bottom: 26px;
+
+  @include font(26px, 1.2, bold);
+
+  color: $primary-text-color;
+
+  &--part {
+    color: $part-of-text;
+  }
+
+  @include for-size(desktop) {
+    @include font(32px, 1.2, bold);
+  }
+}
+
+.form-section__descr {
+  margin-bottom: 40px;
+
+  @include font(14px, 1.2, 500);
+
+  color: $primary-text-color;
+
+  @include for-size(desktop) {
+    @include font(16px, 1.2, 500);
+  }
+}

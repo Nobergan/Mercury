@@ -1,0 +1,32 @@
+.menu-button {
+  display: inline-flex;
+  align-items: center;
+  width: 41px;
+  height: 16px;
+
+  padding: 0px;
+  margin: 0px;
+
+  border: none;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
+
+  @include for-size(tablet) {
+    display: none;
+  }
+}
+
+.menu-button__icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .menu-button__icon-menu {
+  display: none;
+}
+
+.menu-button.is-open .menu-button__icon-cross {
+  display: block;
+}

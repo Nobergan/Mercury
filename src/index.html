@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://bootstraptema.ru/plugins/2017/izitoast/iziToast.min.css"
+    />
+    <title>Mercury</title>
+  </head>
+
+  <body>
+    <!-- Шапка -->
+    <header class="header">
+      <div class="container">
+        <a href="/">
+          <img src="./images/logo.png" alt="logo" class="header__logo" />
+          <img
+            src="./images/logo-desktop.png"
+            alt="logo"
+            class="header__logo-desktop"
+          />
+        </a>
+
+        <!-- Меню -->
+        <div class="menu-container">
+          <nav>
+            <ul class="site-nav list">
+              <li class="site-nav__item">
+                <a
+                  href="index.html"
+                  class="site-nav__link site-nav__item--active"
+                  >Main</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a href="portfolio.html" class="site-nav__link">Contacts</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link">Reviews</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- моб. кнопка -->
+        <button
+          type="button"
+          class="menu-button"
+          data-menu-button
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="41" height="41">
+            <use
+              href="./images/sprite.svg#icon-icon-menu"
+              class="menu-button__icon-menu"
+            ></use>
+            <use
+              width="41"
+              height="41"
+              href="./images/sprite.svg#icon-icon-close"
+              class="menu-button__icon-cross"
+            ></use>
+          </svg>
+        </button>
+
+        <!-- Мобю меню -->
+        <div class="mobile-menu" id="mobile-menu" data-menu>
+          <nav>
+            <ul class="mobile-menu__site-nav list">
+              <li class="mobile-menu__site-nav-item">
+                <a
+                  href="/"
+                  class="mobile-menu__site-nav-link mobile-menu__site-nav-link--mobile-active"
+                  >Main</a
+                >
+              </li>
+              <li class="mobile-menu__site-nav-item">
+                <a href="/" class="mobile-menu__site-nav-link">Contacts</a>
+              </li>
+              <li class="mobile-menu__site-nav-item">
+                <a href="/" class="mobile-menu__site-nav-link">Reviews</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Уникальный контент страницы -->
+    <main>
+      <!-- Баннер -->
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">
+            Ut enim ad minim veniam, quis nostrud exercitation
+          </h1>
+          <div class="hero__video-container">
+            <h3 class="hero__video-title">Lorem ipsum dolor sit amet</h3>
+            <button class="play-btn" type="button">
+              <img
+                class="play-btn__img"
+                src="./images/play-button.png"
+                alt=""
+              />
+            </button>
+            <button class="play-btn" type="button">
+              <img
+                class="play-btn__img-desktop"
+                src="./images/play-button-desktop.png"
+                alt=""
+              />
+            </button>
+            <video
+              src="http://techslides.com/demos/sample-videos/small.webm"
+              poster="./images/video-poster.png"
+              loop
+              preload="auto"
+              class="hero__video"
+              id="myVideo"
+            ></video>
+          </div>
+        </div>
+      </section>
+
+      <!-- Оплата -->
+      <section class="payment">
+        <div class="container">
+          <img
+            class="payment__img"
+            src="./images/payment.png"
+            alt="Pay systems"
+          />
+          <img
+            class="payment__img-desktop"
+            src="./images/payment-desktop.png"
+            alt="Pay systems"
+          />
+        </div>
+      </section>
+
+      <!-- Форма -->
+      <section class="form-section">
+        <div class="container">
+          <div class="form-section__text">
+            <h2 class="form-section__title">
+              Lorem ipsum dolor sit amet
+              <span class="form-section__title--part"
+                >consectetur adipiscing elit</span
+              >
+            </h2>
+            <div class="form-section__descr">
+              <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum.
+              </p>
+              <p>Ut enim ad minim veniam</p>
+            </div>
+          </div>
+
+          <form class="form">
+            <h3 class="form-title">Sign up right now</h3>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                aria-describedby="emailHelp"
+                placeholder="Your name"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="surname"
+                aria-describedby="emailHelp"
+                placeholder="Your surname"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="emailHelp"
+                placeholder="Your e-mail"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                placeholder="Your phone"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary form__button">
+              Start
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Отзывы -->
+      <section class="reviews">
+        <div class="container">
+          <h2 class="reviews__title">
+            Lorem ipsum dolor sit amet
+            <span class="reviews__title--part"
+              >consectetur <br />
+              adipiscing elit</span
+            >, sed do eiusmod tempor
+          </h2>
+          <div class="reviews__flex">
+            <div class="reviews__item">
+              <img
+                src="./images/photo-first.png"
+                class="reviews__item-img"
+                alt="..."
+              />
+              <img
+                src="./images/photo-first-desktop.png"
+                class="reviews__item-img-desktop"
+                alt="..."
+              />
+              <div class="reviews__item-body">
+                <p class="reviews__item-name">Martin Krüger</p>
+                <p class="reviews__item-city">Mannheim</p>
+                <p class="reviews__item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p class="reviews__item-result">4,271&dollar;</p>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <img
+                src="./images/photo-second.png"
+                class="reviews__item-img"
+                alt="..."
+              />
+              <img
+                src="./images/photo-second-desktop.png"
+                class="reviews__item-img-desktop"
+                alt="..."
+              />
+              <div class="reviews__item-body">
+                <p class="reviews__item-name">Martin Krüger</p>
+                <p class="reviews__item-city">Mannheim</p>
+                <p class="reviews__item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p class="reviews__item-result">2,920&dollar;</p>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <img
+                src="./images/photo-third.png"
+                class="reviews__item-img"
+                alt="..."
+              />
+              <img
+                src="./images/photo-third-desktop.png"
+                class="reviews__item-img-desktop"
+                alt="..."
+              />
+              <div class="reviews__item-body">
+                <p class="reviews__item-name">William Johnson</p>
+                <p class="reviews__item-city">Mannheim</p>
+                <p class="reviews__item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p class="reviews__item-result">5,111&dollar;</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__text">
+          Copyright &copy; <span class="this-year"></span> —
+          <span class="footer__text--mobile">Push Button</span> System Ltd
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://bootstraptema.ru/plugins/2017/izitoast/iziToast.min.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function (event) {
+        var date = new Date();
+        date.getFullYear();
+        var thisYear = document.querySelector('.this-year');
+        thisYear.innerText = date.getFullYear();
+      });
+    </script>
+  </body>
+</html>

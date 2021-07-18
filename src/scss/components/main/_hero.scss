@@ -1,0 +1,107 @@
+.hero {
+  padding: 26px 0 40px;
+  background-image: url('./images/hero-bg-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  & {
+    @include for-size(desktop) {
+      min-height: 649px;
+      background-image: url('./images/hero-bg-img-desktop.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      padding: 60px 0;
+    }
+  }
+}
+
+.hero .container {
+  @include for-size(desktop) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.hero__title {
+  margin-bottom: 32px;
+  margin-top: 0;
+
+  @include font(36px, 1.2, bold);
+
+  color: $primary-text-color;
+
+  text-shadow: 0px 4px 55px #000000, 0px 4px 13px #000000;
+
+  @include for-size(desktop) {
+    margin-bottom: 0;
+    margin-top: 150px;
+
+    @include font(42px, 1.2, bold);
+  }
+}
+
+.hero__video-container {
+  position: relative;
+  @include for-size(desktop) {
+    min-width: 793px;
+    height: 463px;
+  }
+}
+
+.hero__video-title {
+  margin-bottom: 16px;
+
+  @include font(18px, 1.2, 800);
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $primary-text-color;
+
+  text-shadow: 0px 4px 13px #000000;
+
+  @include for-size(desktop) {
+    @include font(28px, 1.2, 800);
+    margin-bottom: 30px;
+  }
+}
+
+.hero__video {
+  width: 100%;
+
+  @include for-size(desktop) {
+    min-width: 100%;
+  }
+}
+
+.play-btn {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 42%;
+  z-index: 2;
+
+  @include for-size(desktop) {
+    top: 45%;
+    left: 42%;
+  }
+
+  &__img {
+    @include for-size(desktop) {
+      display: none;
+    }
+  }
+
+  &__img-desktop {
+    display: none;
+
+    @include for-size(desktop) {
+      display: block;
+    }
+  }
+}
+
+.is-hidden {
+  display: none;
+}

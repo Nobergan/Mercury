@@ -1,0 +1,27 @@
+.footer {
+  padding: 20px 0;
+
+  @include for-size(desktop) {
+    padding: 36px 0 40px;
+  }
+}
+
+.footer__text {
+  margin-bottom: 0;
+
+  @include font(12px, 1.2, normal);
+
+  text-align: center;
+
+  color: $footer-primary-text-color;
+
+  @include for-size(desktop) {
+    font-size: 14px;
+  }
+}
+
+.footer__text--mobile {
+  @include for-size(desktop) {
+    display: none;
+  }
+}

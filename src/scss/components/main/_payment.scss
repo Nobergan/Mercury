@@ -1,0 +1,24 @@
+.payment {
+  margin: 34px 0;
+  align-items: stretch;
+
+  @include for-size(desktop) {
+    margin: 60px 0;
+  }
+}
+
+.payment__img {
+  width: 100%;
+
+  @include for-size(desktop) {
+    display: none;
+  }
+}
+
+.payment__img-desktop {
+  display: none;
+
+  @include for-size(desktop) {
+    display: block;
+  }
+}
