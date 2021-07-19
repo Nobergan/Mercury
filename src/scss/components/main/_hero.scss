@@ -80,8 +80,8 @@
 .play-btn {
   display: flex;
   position: absolute;
-  top: 50%;
-  left: 42%;
+  top: 48%;
+  left: 43%;
   z-index: 2;
 
   @include for-size(tablet) {

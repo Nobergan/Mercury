@@ -13,7 +13,7 @@
     color: #212121;
   }
 
-  @include for-size(desktop) {
+  @include for-size(tablet) {
     width: 378px;
     padding: 50px;
   }
