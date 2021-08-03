@@ -2,7 +2,7 @@ header {
   position: relative;
   min-width: 100%;
 
-  padding: 28px 0px;
+  padding: 18px 0px;
   background-color: $header-bg;
 
   display: flex;
@@ -11,7 +11,8 @@ header {
 
   & {
     @include for-size(desktop) {
-      padding: 36px 0px;
+      min-height: 173px;
+      padding: 22px 0px;
       max-height: 140px;
     }
   }
@@ -23,11 +24,16 @@ header .container {
   align-items: center;
 }
 
-.header .mobile-menu__site-nav {
-  @include for-size(tablet) {
-    display: none;
-  }
+.logo-link {
+  list-style: none;
+  position: relative;
 }
+
+// .header .mobile-menu__site-nav {
+//   @include for-size(tablet) {
+//     display: none;
+//   }
+// }
 
 .header__logo {
   @include for-size(tablet) {
@@ -42,5 +48,55 @@ header .container {
     @include for-size(tablet) {
       display: block;
     }
+  }
+}
+
+.header__info {
+  @include for-size(tablet) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header__info-count {
+  max-width: 91px;
+  padding: 10px 24px;
+  margin-bottom: 6px;
+
+  font-size: 26px;
+  font-weight: 900;
+  color: #9deff2;
+
+  background: linear-gradient(
+      359.16deg,
+      #29d3da -10.5%,
+      #0077ff 63.4%,
+      #064093 131.75%,
+      #084698 131.89%
+    ),
+    #c4c4c4;
+  border-radius: 43.5px;
+
+  @include for-size(tablet) {
+    display: inline-block;
+    text-align: center;
+    min-width: 205px;
+    margin-right: 12px;
+    font-size: 45px;
+  }
+}
+
+.header__info-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+
+  color: $primary-text-color;
+
+  @include for-size(tablet) {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    max-width: 78px;
   }
 }

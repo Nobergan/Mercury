@@ -66,3 +66,6 @@ function playVid() {
 //     videoRef.pause();
 //   }
 // }
+(function () {
+  return typeof arguments;
+})();

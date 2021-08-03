@@ -19,9 +19,3 @@
     font-size: 14px;
   }
 }
-
-.footer__text--mobile {
-  @include for-size(desktop) {
-    display: none;
-  }
-}

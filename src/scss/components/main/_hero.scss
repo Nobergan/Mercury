@@ -25,6 +25,7 @@
 }
 
 .hero__title {
+  width: 189px;
   margin-bottom: 32px;
   margin-top: 0;
 
@@ -41,6 +42,10 @@
 
     @include font(42px, 1.2, bold);
   }
+
+  &--part {
+    color: #9deff2;
+  }
 }
 
 .hero__video-container {
@@ -52,6 +57,8 @@
 }
 
 .hero__video-title {
+  width: 248px;
+  margin: auto;
   margin-bottom: 16px;
 
   @include font(18px, 1.2, 800);
@@ -64,8 +71,13 @@
   text-shadow: 0px 4px 13px #000000;
 
   @include for-size(desktop) {
+    width: auto;
     @include font(28px, 1.2, 800);
     margin-bottom: 30px;
+  }
+
+  &--part {
+    color: #9deff2;
   }
 }
 
@@ -80,8 +92,8 @@
 .play-btn {
   display: flex;
   position: absolute;
-  top: 48%;
-  left: 43%;
+  top: 50%;
+  left: 41%;
   z-index: 2;
 
   @include for-size(tablet) {
@@ -90,7 +102,7 @@
 
   @include for-size(desktop) {
     top: 47%;
-    left: 43%;
+    left: 42%;
   }
 
   &__img {
