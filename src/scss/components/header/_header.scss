@@ -36,18 +36,22 @@ header .container {
 // }
 
 .header__logo {
+  width: 150px;
+  // @include for-size(tablet) {
+  //   display: none;
+  // }
+
+  // &-desktop {
+  //   @include for-size(tablet-only) {
+  //     display: none;
+  //   }
+
+  //   @include for-size(tablet) {
+  //     display: block;
+  //   }
+  // }
   @include for-size(tablet) {
-    display: none;
-  }
-
-  &-desktop {
-    @include for-size(tablet-only) {
-      display: none;
-    }
-
-    @include for-size(tablet) {
-      display: block;
-    }
+    width: 300px;
   }
 }
 
